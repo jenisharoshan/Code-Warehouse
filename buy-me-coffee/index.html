@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="data:image/png;base64,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"
+                width="30" height="30" class="d-inline-block align-top" alt="">
+        | BuyMeCoffee
+        </a>
+    </nav>
+    <div class="container1"></div>
+    <div class="container2">
+        <!-- <img class="profile-pic" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" alt="">
+<h1>Jenisha Roshan</h1> -->
+        <div class="container2 shadow w-100 d-flex justify-content-center">
+            <div class="card w-100 ">
+                <div class="d-flex align-items-center">
+                    <div class="profile-pic"> <img
+                            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                            class="rounded" width="155"> </div>
+                    <div class="ml-3 w-100">
+                        <h4 class="mb-0 mt-0">Raja CSP</h4> <span>I help young datascientists/ML Engineers to step up on
+                            the ML Games. Also mentoring ML enthusiasts at Featurepreneur community.</span>
+
+                        <div class="button mt-2 d-flex flex-row align-items-center"> <button
+                                class="btn btn-sm btn-outline-dark w-100">Support</button> <button
+                                class="btn btn-sm btn-info w-100 ml-2">Follow</button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <hr style="color:aquamarine; border:dotted;"> -->
+    <div class="container3">
+
+        <div class="row">
+            <div class=" shadow-lg col-sm-6">
+                <div class="card shadow-lg card1">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">Welcome to my BMC page. If you like my content, please consider buying me a
+                            coffee. Thank you for your support!</p>
+                        <a href="#" class="btn  btn-info">Support</a>
+                    </div>
+                </div>
+                <h4 style="color:#78c4d4;">RECENT SUPPORTERS</h4>
+                <div class="card shadow-lg card2">
+                    <div class=" shadow-lg card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"><img style="width: 40px;"
+                                src="https://cdn2.iconfinder.com/data/icons/drinks-37/512/drinks8-512.png" alt="">
+                            Someone Bought 3 coffees</p>
+                        <a href="#" class="btn share-btn  btn-info">Share</a>
+                    </div>
+                </div>
+                <div class="card shadow-sm card2">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"><img style="width: 40px;"
+                                src="https://cdn2.iconfinder.com/data/icons/drinks-37/512/drinks8-512.png" alt="">
+                            Someone Bought 5 coffees</p>
+                        <a href="#" class="btn share-btn  btn-info">Share</a>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"><img style="width: 40px;"
+                                src="https://cdn2.iconfinder.com/data/icons/drinks-37/512/drinks8-512.png" alt="">
+                            Someone Bought 7 coffees</p>
+                        <a href="#" class="btn share-btn btn-info">Share</a>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"><img style="width: 40px;"
+                                src="https://cdn2.iconfinder.com/data/icons/drinks-37/512/drinks8-512.png" alt="">
+                            Someone Bought 10 coffees</p>
+                        <a href="#" class="btn share-btn btn-info">Share</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="container contact-form">
+                            <div class="contact-image">
+                                <img src="https://cdn.iconscout.com/icon/free/png-512/coffee-1199-1182164.png"
+                                    alt="rocket_contact" />
+                            </div>
+                            <form method="post">
+                                <h3>Buy Raja CSP a coffee</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="txtName" class="form-control"
+                                                placeholder="Your Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="txtEmail" class="form-control"
+                                                placeholder="Your Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-sm btn-outline-info w-100">Send </button>
+                                        </div>
+                                        
+                                        <!-- <div class="coffee">
+                                            <img style="width: 40px;"
+                                            src="https://cdn2.iconfinder.com/data/icons/drinks-37/512/drinks8-512.png" alt="">
+                                          </div> -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <textarea name="txtMsg" class="form-control"
+                                                placeholder="Say something nice(optional)"
+                                                style="width: 100%; height: 150px;"></textarea>
+                                 
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.html"></script>
+</body>
+
+</html>

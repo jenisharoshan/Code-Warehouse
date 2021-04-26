@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cards.css">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Course</title>
+</head>
+
+<body>
+    <nav class="navbar fixed navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="data:image/png;base64,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"
+                width="30" height="30" alt="">
+            TactLabs | University
+        </a>
+    </nav>
+    <div class="container">
+        <ol class="articles">
+            <li class="articles__article" style="--animation-order:1"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <!-- <h2 class="articles__title">Sweet roll gingerbread sweet roll jelly</h2> -->
+                        <img class="icon-1" src="data:image/jpeg;base64,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" alt="">
+                        <p>INTRODUCTORY</p>
+                        <P><b>Python Basics</b></P>
+                        <p>Python is a general-purpose, versatile, and powerful programming language. From web development to machine learning to data science</p>
+                        <div class="articles__footer">
+                            <p>Cakes</p>
+                        </div>
+                    </div>
+                  
+                </a></li>
+            <li class="articles__article" style="--animation-order:2"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Bar cupcake chocolate topping brownie</h2>
+                        <div class="articles__footer">
+                            <p>Chocolates</p><time>2 Feb 2020</time>
+                        </div>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Bar cupcake chocolate topping brownie</h2>
+                        <div class="articles__footer">
+                            <p>Chocolates</p><time>2 Feb 2020</time>
+                        </div>
+                    </div>
+                </a></li>
+            <li class="articles__article" style="--animation-order:3"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Powder tootsie roll chocolate sugar</h2>
+                        <div class="articles__footer">
+                            <p>Puddings</p><time>3 Mar 2020</time>
+                        </div>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Powder tootsie roll chocolate sugar</h2>
+                        <div class="articles__footer">
+                            <p>Puddings</p><time>3 Mar 2020</time>
+                        </div>
+                    </div>
+                </a></li>
+                <li class="articles__article" style="--animation-order:1"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Sweet roll gingerbread sweet roll jelly</h2>
+                        <div class="articles__footer">
+                            <p>Cakes</p><time>1 Jan 2020</time>
+                        </div>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Sweet roll gingerbread sweet roll jelly</h2>
+                        <div class="articles__footer">
+                            <p>Cakes</p><time>1 Jan 2020</time>
+                        </div>
+                    </div>
+                </a></li>
+            <li class="articles__article" style="--animation-order:2"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Bar cupcake chocolate topping brownie</h2>
+                        <div class="articles__footer">
+                            <p>Chocolates</p><time>2 Feb 2020</time>
+                        </div>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Bar cupcake chocolate topping brownie</h2>
+                        <div class="articles__footer">
+                            <p>Chocolates</p><time>2 Feb 2020</time>
+                        </div>
+                    </div>
+                </a></li>
+            <li class="articles__article" style="--animation-order:3"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Powder tootsie roll chocolate sugar</h2>
+                        <div class="articles__footer">
+                            <p>Puddings</p><time>3 Mar 2020</time>
+                        </div>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Powder tootsie roll chocolate sugar</h2>
+                        <div class="articles__footer">
+                            <p>Puddings</p><time>3 Mar 2020</time>
+                        </div>
+                    </div>
+                </a></li>
+                <li class="articles__article" style="--animation-order:1"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Sweet roll gingerbread sweet roll jelly</h2>
+                        <div class="articles__footer">
+                            <p>Cakes</p><time>1 Jan 2020</time>
+                        </div>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Sweet roll gingerbread sweet roll jelly</h2>
+                        <div class="articles__footer">
+                            <p>Cakes</p><time>1 Jan 2020</time>
+                        </div>
+                    </div>
+                </a></li>
+            <li class="articles__article" style="--animation-order:2"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Bar cupcake chocolate topping brownie</h2>
+                        <div class="articles__footer">
+                            <p>Chocolates</p><time>2 Feb 2020</time>
+                        </div>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Bar cupcake chocolate topping brownie</h2>
+                        <div class="articles__footer">
+                            <p>Chocolates</p><time>2 Feb 2020</time>
+                        </div>
+                    </div>
+                </a></li>
+            <li class="articles__article" style="--animation-order:3"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Powder tootsie roll chocolate sugar</h2>
+                        <div class="articles__footer">
+                            <p>Puddings</p><time>3 Mar 2020</time>
+                        </div>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Powder tootsie roll chocolate sugar</h2>
+                        <div class="articles__footer">
+                            <p>Puddings</p><time>3 Mar 2020</time>
+                        </div>
+                    </div>
+                </a></li>
+                <li class="articles__article" style="--animation-order:1"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Sweet roll gingerbread sweet roll jelly</h2>
+                        <div class="articles__footer">
+                            <p>Cakes</p><time>1 Jan 2020</time>
+                        </div>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Sweet roll gingerbread sweet roll jelly</h2>
+                        <div class="articles__footer">
+                            <p>Cakes</p><time>1 Jan 2020</time>
+                        </div>
+                    </div>
+                </a></li>
+            <li class="articles__article" style="--animation-order:2"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Bar cupcake chocolate topping brownie</h2>
+                        <div class="articles__footer">
+                            <p>Chocolates</p><time>2 Feb 2020</time>
+                        </div>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Bar cupcake chocolate topping brownie</h2>
+                        <div class="articles__footer">
+                            <p>Chocolates</p><time>2 Feb 2020</time>
+                        </div>
+                    </div>
+                </a></li>
+            <li class="articles__article" style="--animation-order:3"><a class="articles__link">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Powder tootsie roll chocolate sugar</h2>
+                        <div class="articles__footer">
+                            <p>Puddings</p><time>3 Mar 2020</time>
+                        </div>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Powder tootsie roll chocolate sugar</h2>
+                        <div class="articles__footer">
+                            <p>Puddings</p><time>3 Mar 2020</time>
+                        </div>
+                    </div>
+                </a></li>
+        </ol>
+    </div>
+</body>
+
+</html>

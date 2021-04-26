@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="overview.css">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+        <!-- GOOGLE FONTS  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <title>Course</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar fixed navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="data:image/png;base64,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"
+                width="30" height="30" alt="">
+            TactLabs | University
+        </a>
+        <div class="navbar-nav ml-auto">
+            <a href="#" class="nav-item nav-link">LogOut</a>
+        </div>
+    </nav>
+    <!-- h3  -->
+    <h2><b>COURSE OVERVIEW</b></h2>
+    <!-- top card  -->
+    <main role="main shadow">
+        <div class="jumbotron shadow-top shadow w-150 top-card">
+            <img class="top-img" src="https://fixmyweb.com.au/wp-content/uploads/2016/12/webdev.png" alt="">
+            <h1>Web Development Bootcamp</h1>
+            <p class="lead">Learn the fundamentals of Web Development</p>
+            <p><b>Currently on:</b></p>
+            <p>CHAPTER 1: HTML Basics</p>
+            <p>1 out of 13 lessons completed</p>
+            <!-- <img class="graph" src="https://img.pngio.com/download-graph-image-free-png-hq-hq-png-image-freepngimg-graph-png-512_512.png" alt=""> -->
+            <div class="btn-sec">
+                <a href="#"><button type="button" class="btn btn-info"> Resume</button></a>
+                <a href="#"><button type="button" class="btn btn-outline-dark"> View Discussion</button></a>
+            </div>
+        </div>
+    </main>
+    <h3>Available Chapters </h3>
+    <p style="text-align: center;"><b>Start Date :</b> March 5,2021 <br><b> Due Date :</b> September 5,2021</p>
+    <!-- <p style="text-align: center;">Due Date : September 5,2021</p>  -->
+
+    <!-- end of top card  -->
+    <div class="bottom-sec">
+        <div class=" shadow card w-75 col d-flex justify-content-center bottom-sec  mx-auto">
+            <div class="card-body">
+                <h5 class="card-title">CHAPTER 2: What is HTML?</h5>
+                <p class="card-text">Introduction to HTML <span> <i class="far fa-circle"></i> <i
+                            class="far fa-circle"></i>
+                        <i class="far fa-circle"></i> <i class="far fa-circle"></i> <i class="far fa-circle"></i></span>
+                </p>
+                <a href="#" class="btn btn-outline-info">1 of 13</a> <span>Graded Assignment</span>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- end of top card  -->
+    <div class="bottom-sec">
+        <div class="card shadow w-75 col d-flex justify-content-center  mx-auto">
+            <div class="card-body">
+                <h5 class="card-title">CHAPTER 3: What is HTML?</h5>
+                <p class="card-text">Introduction to HTML <span> <i class="far fa-circle"></i> <i
+                            class="far fa-circle"></i>
+                        <i class="far fa-circle"></i> <i class="far fa-circle"></i> <i class="far fa-circle"></i></span>
+                </p>
+                <a href="#" class="btn btn-outline-info">1 of 13</a> <span>Graded Assignment</span>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- end of top card  -->
+    <div class="bottom-sec">
+        <div class="card w-75 shadow col d-flex justify-content-center  mx-auto">
+            <div class="card-body">
+                <h5 class="card-title">CHAPTER 4: What is HTML?</h5>
+                <p class="card-text">Introduction to HTML <span> <i class="far fa-circle"></i> <i
+                            class="far fa-circle"></i>
+                        <i class="far fa-circle"></i> <i class="far fa-circle"></i> <i class="far fa-circle"></i></span>
+                </p>
+                <a href="#" class="btn btn-outline-info">1 of 13</a> <span>Graded Assignment</span>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- end of top card  -->
+    <div class="bottom-sec">
+        <div class="card w-75 shadow  col d-flex justify-content-center  mx-auto">
+            <div class="card-body">
+                <h5 class="card-title">CHAPTER 1: What is HTML?</h5>
+                <p class="card-text">Introduction to HTML <span> <i class="far fa-circle"></i> <i
+                            class="far fa-circle"></i>
+                        <i class="far fa-circle"></i> <i class="far fa-circle"></i> <i class="far fa-circle"></i></span>
+                </p>
+                <a href="#" class="btn btn-outline-info">1 of 13</a> <span>Graded Assignment</span>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- end of top card  -->
+    <!-- end of top card  -->
+    <div class="bottom-sec">
+        <div class="card w-75 col shadow d-flex justify-content-center  mx-auto">
+            <div class="card-body">
+                <h5 class="card-title">CHAPTER 1: What is HTML?</h5>
+                <p class="card-text">Introduction to HTML <span> <i class="far fa-circle"></i> <i
+                            class="far fa-circle"></i>
+                        <i class="far fa-circle"></i> <i class="far fa-circle"></i> <i class="far fa-circle"></i></span>
+                </p>
+                <a href="#" class="btn btn-outline-info">1 of 13</a> <span>Graded Assignment</span>
+            </div>
+
+
+
+        </div>
+    </div>
+    <nav class="navbar navbar-default  navbar-fixed-bottom" role="navigation">
+        <div class="container text-center">
+            <p class="navbar-text col-md-12 col-sm-12 col-xs-12">&copy; TactLabs | Featurepreneur | 2021</p>
+        </div>
+    </nav>
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
